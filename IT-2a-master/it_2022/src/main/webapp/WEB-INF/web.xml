@@ -1,0 +1,73 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>LoggedAccess</filter-name>
+  	<display-name>LoggedAccess</display-name>
+  	<description></description>
+  	<filter-class>filters.LoggedAccess</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>LoggedAccess</filter-name>
+  	<url-pattern>/LoggedAccess</url-pattern>
+  </filter-mapping>
+  <servlet>
+  	<servlet-name>RegistraionServlet</servlet-name>
+  	<display-name>RegistraionServlet</display-name>
+  	<description></description>
+  	<servlet-class>controllers.RegistraionServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>controllers.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UserServlet</servlet-name>
+  	<display-name>UserServlet</display-name>
+  	<description></description>
+  	<servlet-class>controllers.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoguotServlet</servlet-name>
+  	<display-name>LoguotServlet</display-name>
+  	<description></description>
+  	<servlet-class>controllers.LoguotServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+  	<servlet-name>CookieServlet</servlet-name>
+  	<display-name>CookieServlet</display-name>
+  	<description></description>
+  	<servlet-class>controllers.CookieServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UsersServlet</servlet-name>
+  	<display-name>UsersServlet</display-name>
+  	<description></description>
+  	<servlet-class>controllers.UsersServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AsyncEditProfileInfoServlet</servlet-name>
+  	<display-name>AsyncEditProfileInfoServlet</display-name>
+  	<description></description>
+  	<servlet-class>controllers.AsyncEditProfileInfoServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>CookieServlet</servlet-name>
+  	<url-pattern>/CookieServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UsersServlet</servlet-name>
+  	<url-pattern>/UsersServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AsyncEditProfileInfoServlet</servlet-name>
+  	<url-pattern>/AsyncEditProfileInfoServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
